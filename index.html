@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>มหาศึกสามภพ ตอนที่ 1</title>
-<style>html,body{margin:0;padding:0;background:#fff}h1{font-size:1.3em;text-align:center;margin:12px 0;font-family:sans-serif;color:#222}main{max-width:800px;margin:0 auto;line-height:0;font-size:0}img{display:block;width:100%;height:auto;margin:0;border:0}</style>
-</head><body><h1>มหาศึกสามภพ ตอนที่ 1</h1><main>
-<img src="slices/01.jpg?v=8"><img src="slices/02.jpg?v=8"><img src="slices/03.jpg?v=8"><img src="slices/04.jpg?v=8"><img src="slices/05.jpg?v=8"><img src="slices/06.jpg?v=8"><img src="slices/07.jpg?v=8"><img src="slices/08.jpg?v=8"><img src="slices/09.jpg?v=8"><img src="slices/10.jpg?v=8"><img src="slices/11.jpg?v=8"><img src="slices/12.jpg?v=8"><img src="slices/13.jpg?v=8"><img src="slices/14.jpg?v=8"><img src="slices/15.jpg?v=8"><img src="slices/16.jpg?v=8"><img src="slices/17.jpg?v=8"><img src="slices/18.jpg?v=8"><img src="slices/19.jpg?v=8"><img src="slices/20.jpg?v=8"><img src="slices/21.jpg?v=8"><img src="slices/22.jpg?v=8"><img src="slices/23.jpg?v=8"><img src="slices/24.jpg?v=8"><img src="slices/25.jpg?v=8"><img src="slices/26.jpg?v=8"><img src="slices/27.jpg?v=8"><img src="slices/28.jpg?v=8"><img src="slices/29.jpg?v=8"><img src="slices/30.jpg?v=8"><img src="slices/31.jpg?v=8"><img src="slices/32.jpg?v=8"><img src="slices/33.jpg?v=8"><img src="slices/34.jpg?v=8"></main></body></html>
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>มหาศึกสามภพ</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&family=Sarabun:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="hero"><h1>มหาศึกสามภพ</h1><div class="sub">มังฮวาฉบับภาษาไทย</div>
+<p class="syn">จั่วมอ ศิษย์ฝ่ายนอกร่างผอมบางแห่งสำนักกระบี่สุญตา ผู้ถูกฝันประหลาดเดิมตามหลอกหลอนทุกค่ำคืน เป็นศิษย์ฝ่ายนอกเพียงคนเดียวที่ฝึกเคล็ดเมฆฝนหล่นรินจนสำเร็จขั้นที่สาม จนได้รับหน้าที่เรียกฝนให้ไร่นาปราณทั้งหมดของสำนัก วันหนึ่งมันแบกข้าวปราณหนักสามร้อยจินลงจากภูเขา แล้วขึ้นนกกระเรียนกระดาษคุณภาพต่ำที่สุด "เสี่ยวหวง" บินโซเซมุ่งหน้าไปขายข้าว</p>
+<div id="cont"></div></header>
+<div class="wrap"><h2>รายการตอน</h2><div id="list"></div></div><footer>มหาศึกสามภพ</footer>
+<script>
+fetch('episodes.json').then(r=>r.json()).then(d=>{const L=document.getElementById('list');
+d.episodes.forEach(e=>{L.insertAdjacentHTML('beforeend',`<a class="ep" href="ep/${e.number}/"><img loading="lazy" src="${e.cover}" alt="ตอนที่ ${e.number}"><div class="t"><b>ตอนที่ ${e.number}</b><small>${e.title} · ${e.slices} ภาพ</small></div><span class="btn">อ่าน</span></a>`)});
+try{const s=JSON.parse(localStorage.getItem('mhs_last'));if(s&&d.episodes.some(e=>e.number==s.ep))document.getElementById('cont').innerHTML=`<a class="btn" href="ep/${s.ep}/">อ่านต่อ ตอนที่ ${s.ep} (${Math.round(s.pct*100)}%)</a>`;else document.getElementById('cont').innerHTML=`<a class="btn" href="ep/${d.episodes[0].number}/">เริ่มอ่านตอนที่ 1</a>`}catch(x){}});
+</script></body></html>
