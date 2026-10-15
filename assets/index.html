@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ต้นแบบ · มหาศึกสามภพ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Sarabun',sans-serif;background:#fff;color:#222;line-height:1.6}
+a{color:#8a6a20;text-decoration:none}
+a:hover{text-decoration:underline}
+header{padding:28px 16px 18px;border-bottom:1px solid #eee;background:#fafafa}
+header .inner{max-width:1100px;margin:0 auto}
+header h1{font-family:'Prompt',sans-serif;font-size:clamp(1.5rem,4vw,2rem);margin:0 0 6px;color:#1a140a}
+header p{margin:0;color:#666}
+.nav{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.nav a{display:inline-block;background:#f0e6c8;color:#1a140a;padding:6px 12px;border-radius:999px;font-size:.92rem;font-weight:600}
+.nav a:hover{background:#e4d29a;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+.sec{margin:28px 0}
+.sec h2{font-family:'Prompt',sans-serif;font-weight:500;font-size:1.35rem;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid #e9c77b;color:#1a140a}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{margin:0;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.card a{display:block}
+.card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#f4f4f4;cursor:zoom-in;transition:opacity .15s}
+.card img:hover{opacity:.92}
+.card figcaption{padding:10px 12px 12px;font-size:.95rem;color:#333}
+/* lightbox */
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:4px;box-shadow:0 4px 40px #000}
+#lb .cap{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#eee;font-size:.95rem;padding:0 16px;pointer-events:none}
+#lb .x{position:absolute;top:12px;right:16px;color:#fff;font-size:2rem;line-height:1;cursor:pointer;opacity:.8}
+footer{text-align:center;color:#999;font-size:.85rem;padding:20px;border-top:1px solid #eee}
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>ต้นแบบ · มหาศึกสามภพ</h1>
+    <p>แผ่นอ้างอิงตัวละคร พาหนะ อุปกรณ์ สถานที่ เวท และลายเส้น — ใช้เทียบตอนวาดว่าตรงดีไซน์ไหม</p>
+    <div class="nav">
+      <a href="../">← หน้าหลัก</a>
+      <a href="#sec-1">ลายเส้น</a>
+      <a href="#sec-2">ตัวละคร</a>
+      <a href="#sec-3">พาหนะ</a>
+      <a href="#sec-4">อุปกรณ์</a>
+      <a href="#sec-5">สถานที่</a>
+      <a href="#sec-6">เวท/ท่าร่าย</a>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <section class="sec" id="sec-1">
+    <h2>ลายเส้นต้นแบบ</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/style-lineart.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/style-lineart.jpg" alt="ลายเส้นต้นแบบ (อนุมัติแล้ว) — เส้นหมึกดำหนัก เงาดำตัดแข็ง ไฟขอบสีฟ้า"></a><figcaption>ลายเส้นต้นแบบ (อนุมัติแล้ว) — เส้นหมึกดำหนัก เงาดำตัดแข็ง ไฟขอบสีฟ้า</figcaption></figure>
+    </div>
+  </section>
+  <section class="sec" id="sec-7">
+    <h2>ตัวละคร</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/char-zuomo-new.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/char-zuomo-new.jpg" alt="จั่วม่อ (ใหม่)"></a><figcaption>จั่วม่อ (ใหม่)</figcaption></figure>
+      <figure class="card"><a href="img/char-laohei.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/char-laohei.jpg" alt="เหล่าเฮย"></a><figcaption>เหล่าเฮย</figcaption></figure>
+      <figure class="card"><a href="img/char-porter.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/char-porter.jpg" alt="ลูกหาบ"></a><figcaption>ลูกหาบ</figcaption></figure>
+    </div>
+  </section>
+  <section class="sec" id="sec-15">
+    <h2>พาหนะ</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/mount-xiaohuang.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/mount-xiaohuang.jpg" alt="เสี่ยวหวง — นกกระเรียนกระดาษ"></a><figcaption>เสี่ยวหวง — นกกระเรียนกระดาษ</figcaption></figure>
+      <figure class="card"><a href="img/mount-flight-sheet.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/mount-flight-sheet.jpg" alt="ห่านจะงอยแดง / เมฆมนตรามหาโชค / ปีกอัสนีบาต / เรือพันปีก"></a><figcaption>ห่านจะงอยแดง / เมฆมนตรามหาโชค / ปีกอัสนีบาต / เรือพันปีก</figcaption></figure>
+    </div>
+  </section>
+  <section class="sec" id="sec-22">
+    <h2>อุปกรณ์</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/props-items.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/props-items.jpg" alt="อุปกรณ์และของใช้"></a><figcaption>อุปกรณ์และของใช้</figcaption></figure>
+    </div>
+  </section>
+  <section class="sec" id="sec-28">
+    <h2>สถานที่</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/locations.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/locations.jpg" alt="สถานที่และฉาก"></a><figcaption>สถานที่และฉาก</figcaption></figure>
+    </div>
+  </section>
+  <section class="sec" id="sec-34">
+    <h2>เวท/ท่าร่าย</h2>
+    <div class="grid">
+      <figure class="card"><a href="img/spell-cloudrain-6seals.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/spell-cloudrain-6seals.jpg" alt="เคล็ดเมฆฝนหล่นริน — ท่าร่าย 6 จังหวะ"></a><figcaption>เคล็ดเมฆฝนหล่นริน — ท่าร่าย 6 จังหวะ</figcaption></figure>
+    </div>
+  </section>
+</div>
+<footer>มหาศึกสามภพ · คลังต้นแบบ</footer>
+<div id="lb" role="dialog" aria-modal="true"><span class="x" aria-label="ปิด">×</span><img alt=""><div class="cap"></div></div>
+<script>
+(function(){
+  const lb=document.getElementById('lb');
+  const img=lb.querySelector('img');
+  const cap=lb.querySelector('.cap');
+  document.querySelectorAll('.card a').forEach(a=>{
+    a.addEventListener('click',e=>{
+      e.preventDefault();
+      img.src=a.getAttribute('href');
+      cap.textContent=a.querySelector('img').alt||'';
+      lb.classList.add('on');
+    });
+  });
+  function close(){lb.classList.remove('on');img.src='';}
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
