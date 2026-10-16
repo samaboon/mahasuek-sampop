@@ -1,1 +1,17 @@
-{"title": "มหาศึกสามภพ", "episodes": [{"number": 1, "title": "เคล็ดเมฆฝนหล่นริน", "cover": "ep/1/cover.jpg", "slices": 31}, {"number": 2, "title": "บ้านน้อย", "cover": "ep/2/cover.jpg", "slices": 28}]}
+{
+  "title": "มหาศึกสามภพ",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "เคล็ดเมฆฝนหล่นริน",
+      "cover": "ep/1/cover.jpg",
+      "slices": 31
+    },
+    {
+      "number": 2,
+      "title": "บ้านน้อย",
+      "cover": "ep/2/cover.jpg",
+      "slices": 38
+    }
+  ]
+}
